@@ -4,12 +4,16 @@
 <h1>All the Guinea Pigs</h1>
 
 {% for guinea_pig in guinea_pigs %}
-    <div>
-        <ul>
-            <li>{{ guinea_pig.name }}</li>
-            <li>Color: {{ guinea_pig.color }}</li>
-            <li>About: {{ guinea_pig.description }}</li>
-            <li>Age: {{ guinea_pig.age }}</li>
+    <div class="card text-dark bg-light mb-3" style="width: 18rem;">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+            <h5 class="card-title">{{ guinea_pig.name }}</h5>
+            <p class="card-text">{{ guinea_pig.description }}</p>
+        </div>
+        <ul class ="list-group list-group-flush">
+            <li class="list-group-item">Age: {{ guinea_pig.age }}</li>
+            <li class="list-group-item">Color: {{ guinea_pig.color }}</li>
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
         </ul>
     </div>
 {% endfor %}
