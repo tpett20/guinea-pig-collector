@@ -11,5 +11,5 @@ def about(request):
 
 def guinea_pigs_index(request):
     return render(request, 'guinea-pigs/index.html', {
-        'guinea pigs': guinea_pigs
+        'guinea_pigs': guinea_pigs
     })

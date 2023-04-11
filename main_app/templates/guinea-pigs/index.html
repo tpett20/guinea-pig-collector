@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>All the Guinea Pigs</h1>
+
+{% for guinea_pig in guinea_pigs %}
+    <div>
+        <ul>
+            <li>{{ guinea_pig.name }}</li>
+            <li>Color: {{ guinea_pig.color }}</li>
+            <li>About: {{ guinea_pig.description }}</li>
+            <li>Age: {{ guinea_pig.age }}</li>
+        </ul>
+    </div>
+{% endfor %}
+
+{% endblock %}
